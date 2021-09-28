@@ -17,11 +17,52 @@ html {
   font-style: normal;
 }
 
+header {
+  display: contents;
+}
+
 body {
   margin: 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "banner banner banner"
+    "col1 col2 col3";
+    gap: 1rem;
+}
+
+.pano {
+  grid-area: banner;
+}
+
+h1 {
+  grid-area: banner;
+  align-self: flex-start;
+  grid-column: 1
+  grid-row: 1;
+  z-index: 1;
+}
+
+nav {
+  grid-area: banner;
+  grid-column: 3;
+  grid-row: 1;
+  align-self: start;
+  z-index: 2;
 }
 
 img {
   display: block;
   width: 100%;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-left: 13em;
 }
