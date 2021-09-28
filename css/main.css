@@ -52,12 +52,12 @@ h1 {
 }
 
 i {
-  font-size: 120%;
+  font-size: 2rem;
   margin-bottom: -.1em;
 }
 
 span {
-  font-size: 60%;
+  font-size: 1.125rem;
 }
 
 nav {
@@ -81,12 +81,29 @@ nav ul li {
 nav ul {
   display: flex;
   flex-direction: row;
-  padding-top: 2rem;
+  padding-top: 2.5rem;
   margin: 0;
   justify-content: space-between;
   justify-content: space-around;
 }
 
 nav {
-  font-size: 145%;
+  font-size: 140%;
+}
+
+p:nth-child(1) {
+  font-size: 240%;
+  text-align: center;
+  margin: 0;
+}
+
+p:nth-child(2) {
+  text-align: center;
+}
+
+section {
+  display: grid;
+  grid-column: 2;
+  border-top: 5px solid #e2e2e2;
+  border-bottom: 5px solid #e2e2e2;
 }
