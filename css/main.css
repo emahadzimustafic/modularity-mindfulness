@@ -21,16 +21,16 @@ header {
   display: contents;
 }
 
+
 body {
   margin: 1.5rem;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "banner banner banner"
-    "span span span"
-    "col1 col2 col3"
-    "footer footer footer";
+    "banner"
+    "col1"
+    "footer";
   gap: 1rem;
 }
 
@@ -40,14 +40,11 @@ body {
 
 h1 {
   grid-area: banner;
-  align-self: flex-start;
-  grid-column: 1
   grid-row: 1;
   z-index: 1;
 
   margin-top: .5em;
   margin-left: .8em;
-
   display: flex;
   flex-direction: column;
 }
@@ -55,18 +52,14 @@ h1 {
 i {
   font-size: 2rem;
   margin-bottom: -.1em;
+  display: flex;
+  flex-direction: column;
 }
 
 span {
   font-size: 1.125rem;
-}
-
-nav {
-  grid-area: banner;
-  grid-column: 3;
-  grid-row: 1;
-  align-self: start;
-  z-index: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -90,6 +83,7 @@ nav ul {
 
 nav {
   font-size: 140%;
+  grid-area: banner;
 }
 
 section p:nth-child(2) {
@@ -104,15 +98,12 @@ h3 {
 
 section {
   display: grid;
-  grid-column: 2;
   border-top: 5px solid #e2e2e2;
   border-bottom: 5px solid #e2e2e2;
   grid-area: span;
   font-style: normal;
   padding: 0;
-  margin-left: -2rem;
-  margin-right: -2rem;
-  margin-bottom: -4rem;
+  margin: 1rem;
 }
 
 article {
@@ -120,18 +111,6 @@ article {
   gap: 1rem;
   margin: 1rem;
   padding: 0;
-}
-
-figure:nth-child(1) {
-  grid-area: col1;
-}
-
-figure:nth-child(2) {
-  grid-area: col2;
-}
-
-figure:nth-child(3) {
-  grid-area: col3;
 }
 
 figure h4 {
