@@ -78,7 +78,7 @@ nav ul {
 nav {
   font-size: 1.125rem;
   grid-area: banner;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 
 .banner {
@@ -123,9 +123,9 @@ article {
 figure h4 {
   display: flex;
   flex-direction: column;
-  font-size: 1.125rem;
+  font-size: 1rem;
   padding: 0;
-  margin: .8rem 0;
+  margin: 1rem 0;
 }
 
 figure img {
@@ -142,7 +142,7 @@ figcaption h4 span {
 }
 
 figcaption p {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 figure {
@@ -241,10 +241,12 @@ footer {
 
   figure:nth-child(2) {
     grid-area: col2;
+    margin: .5rem 0;
   }
 
   figure:nth-child(3) {
     grid-area: col3;
+    margin: .5rem 0;
   }
 
   figure a {
@@ -263,7 +265,7 @@ footer {
   figure {
     display: flex;
     flex-direction: column;
-    margin-top: .5rem;
+    margin: .5rem 0;
   }
 
   figcaption {
