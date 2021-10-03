@@ -21,7 +21,6 @@ header {
   display: contents;
 }
 
-
 body {
   margin: 1.5rem;
 
@@ -106,7 +105,7 @@ section {
   grid-area: span;
   font-style: normal;
   padding: 0;
-  margin: 1rem;
+  margin: 0 0 -2.5rem;
 }
 
 article {
