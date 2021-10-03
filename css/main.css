@@ -47,19 +47,16 @@ h1 {
   margin-left: .8em;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 i {
   font-size: 2rem;
   margin-bottom: -.1em;
-  display: flex;
-  flex-direction: column;
 }
 
 span {
   font-size: 1.125rem;
-  display: flex;
-  flex-direction: column;
 }
 
 img {
@@ -84,6 +81,12 @@ nav ul {
 nav {
   font-size: 140%;
   grid-area: banner;
+  align-items: center;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
 }
 
 section p:nth-child(2) {
@@ -147,5 +150,4 @@ footer {
 
 footer p {
   padding-top: .1rem;
-  padding-bottom: -.1rem;
 }
