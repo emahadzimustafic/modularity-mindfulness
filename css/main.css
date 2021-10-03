@@ -158,10 +158,6 @@ figure a {
   flex-direction: column;
 }
 
-figure:nth-child(3) {
-  margin-bottom: 0;
-}
-
 footer {
   grid-area: footer;
   border-top: 3.2px solid #e2e2e2;
@@ -181,7 +177,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       "banner banner banner"
-      "span span span"
+      "spann spann spann"
       "col1 col2 col3"
       "footer footer footer";
     gap: 1rem;
@@ -216,8 +212,9 @@ footer {
   }
 
   section {
-    grid-area: span;
-    grid-column: 2;
+    grid-area: spann;
+    justify-self: center;
+    max-width: 30em;
   }
 
   figure:nth-child(1) {
@@ -234,6 +231,7 @@ footer {
 
 figure a {
   justify-content: flex-end;
+  margin-top: auto;
 }
 
 figure img {
@@ -242,5 +240,16 @@ figure img {
 
 section p {
   padding: 0;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+}
+
+figcaption {
+display: flex;
+flex-direction: column;
+flex-grow: 1;
 }
 }
