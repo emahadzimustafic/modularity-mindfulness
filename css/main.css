@@ -125,7 +125,7 @@ figure h4 {
   flex-direction: column;
   font-size: 1.125rem;
   padding: 0;
-  margin: .5rem 0;
+  margin: .8rem 0;
 }
 
 figure img {
@@ -142,13 +142,21 @@ figcaption h4 span {
 }
 
 figcaption p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 figure {
   grid-area: col1;
   padding: 0;
   margin: 1.5rem 0 .5rem;
+}
+
+figure:nth-child(2) {
+  margin: 1rem 0;
+}
+
+figure:nth-child(3) {
+  margin: 1rem 0;
 }
 
 figure a {
@@ -255,6 +263,7 @@ footer {
   figure {
     display: flex;
     flex-direction: column;
+    margin-top: .5rem;
   }
 
   figcaption {
