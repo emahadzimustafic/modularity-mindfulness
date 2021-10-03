@@ -138,7 +138,7 @@ figcaption h4 i {
 }
 
 figcaption h4 span {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 figcaption p {
@@ -175,7 +175,7 @@ footer {
   grid-area: footer;
   border-top: 3.2px solid #e2e2e2;
   text-align: center;
-  padding-top: 1em;
+  padding-top: 1.5em;
   font-size: .8rem;
 }
 
