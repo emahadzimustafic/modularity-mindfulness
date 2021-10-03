@@ -214,11 +214,12 @@ footer {
     grid-column: 1;
     grid-row: 1;
     text-align: left;
+    padding-left: .5rem;
   }
 
   nav {
     grid-area: banner;
-    padding-top: 1.5rem;
+    padding: 1.5rem 0 0 .5rem;
     align-items: center;
     text-align: right;
     margin-left: auto;
@@ -262,6 +263,7 @@ footer {
 
   figcaption p {
     margin-bottom: 1.5rem;
+    margin-top: 1rem;
   }
 
   figure img {
@@ -282,6 +284,10 @@ footer {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+  }
+
+  footer {
+    padding-top: 1rem;
   }
 
 }
