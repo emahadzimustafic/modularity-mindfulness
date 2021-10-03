@@ -207,6 +207,9 @@ footer {
     justify-content: space-between;
   }
 
+nav li {
+  padding: 0 .5rem;
+}
   img {
     display: block;
     width: 100%;
