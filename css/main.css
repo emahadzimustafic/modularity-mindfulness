@@ -31,7 +31,7 @@ body {
 
 .pano {
   grid-area: banner;
-  margin: .5em 0;
+  margin: 1rem 0 ;
 }
 
 h1 {
@@ -46,7 +46,6 @@ h1 {
 
 header i {
   font-size: 2rem;
-  margin-bottom: -.1em;
 }
 
 header span {
@@ -86,9 +85,10 @@ nav {
   flex-direction: column;
 }
 
-section p:nth-child(2) {
+section p {
   text-align: center;
   margin-top: -1rem;
+  padding: 0 1.5rem;
 }
 
 h3 {
@@ -129,6 +129,10 @@ figure img {
   width: 100%;
 }
 
+figcaption h4 i {
+  font-size: 1.5rem;
+}
+
 figure {
   padding: 0;
   margin: 2rem 0;
@@ -151,5 +155,5 @@ footer {
   border-top: 3.2px solid #e2e2e2;
   text-align: center;
   padding-top: 1em;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
