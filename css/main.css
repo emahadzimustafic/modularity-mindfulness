@@ -87,8 +87,8 @@ nav {
 
 section p {
   text-align: center;
-  margin-top: 0rem;
-  margin-bottom: 1.125rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
   padding: 0 1.5rem;
 }
 
@@ -160,5 +160,5 @@ footer {
   border-top: 3.2px solid #e2e2e2;
   text-align: center;
   padding-top: 1em;
-  font-size: 1rem;
+  font-size: .5rem;
 }
