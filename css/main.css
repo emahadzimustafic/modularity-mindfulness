@@ -32,7 +32,7 @@ body {
 
 .pano {
   grid-area: banner;
-  margin: .5rem 0 .5rem;
+  margin: 1rem 0 .5rem;
 }
 
 h1 {
@@ -189,11 +189,16 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-    "banner banner banner"
-    "spann spann spann"
-    "col1 col2 col3"
-    "footer footer footer";
+      "banner banner banner"
+      "spann spann spann"
+      "col1 col2 col3"
+      "footer footer footer";
     gap: 1rem;
+  }
+
+  .pano {
+    grid-area: banner;
+    margin: .5rem 0;
   }
 
   main {
@@ -223,6 +228,7 @@ footer {
   nav li {
     padding: 0 .5rem;
   }
+
   img {
     display: block;
     width: 100%;
