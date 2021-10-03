@@ -36,9 +36,8 @@ body {
 h1 {
   grid-area: banner;
   grid-row: 1;
-  z-index: 1;
 
-  margin-top: .5em;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,27 +55,30 @@ span {
 img {
   display: block;
   width: 100%;
-  padding-top: 1rem;
 }
 
-nav ul li {
+nav li {
   list-style-type: none;
+}
+
+nav li a {
+  color: #3783a3;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
   padding-top: .5rem;
+  padding-left: 0;
   margin: 0;
   justify-content: space-between;
-  justify-content: space-around;
+  color: #3783a3;
 }
 
 nav {
-  font-size: 140%;
+  font-size: 1.125rem;
   grid-area: banner;
-  align-items: center;
-  margin-top:
+  padding: 0 1rem 0 1rem;
 }
 
 .banner {
@@ -96,14 +98,16 @@ h3 {
 
 section {
   display: grid;
-  border-top: 5px solid #e2e2e2;
-  border-bottom: 5px solid #e2e2e2;
+  border-top: 3.2px solid #e2e2e2;
+  border-bottom: 3.2px solid #e2e2e2;
   grid-area: span;
   font-style: normal;
   padding: 0;
-  margin: 0 0 -2.5rem;
 }
 
+section > h3 {
+  font-weight: normal;
+}
 article {
   display: contents;
   gap: 1rem;
@@ -118,12 +122,11 @@ figure h4 {
 
 figure img {
   width: 100%;
-  padding-top: 5rem;
 }
 
 figure {
   padding: 0;
-  margin: 0;
+  margin: 2rem 0 2rem 0;
 }
 
 figure a {
