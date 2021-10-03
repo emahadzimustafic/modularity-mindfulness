@@ -124,7 +124,8 @@ figure h4 {
   display: flex;
   flex-direction: column;
   font-size: 1.125rem;
-  padding-top: 0;
+  padding: 0;
+  margin: .5rem 0;
 }
 
 figure img {
@@ -138,6 +139,10 @@ figcaption h4 i {
 
 figcaption h4 span {
   font-size: 1.125rem;
+}
+
+figcaption p {
+  margin-bottom: 1rem;
 }
 
 figure {
