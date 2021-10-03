@@ -176,15 +176,15 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      "banner banner banner"
-      "spann spann spann"
-      "col1 col2 col3"
-      "footer footer footer";
+    "banner banner banner"
+    "spann spann spann"
+    "col1 col2 col3"
+    "footer footer footer";
     gap: 1rem;
   }
 
   main {
-    display: contents
+    display: contents;
   }
 
   .pano {
@@ -207,9 +207,9 @@ footer {
     justify-content: space-between;
   }
 
-nav li {
-  padding: 0 .5rem;
-}
+  nav li {
+    padding: 0 .5rem;
+  }
   img {
     display: block;
     width: 100%;
@@ -223,38 +223,38 @@ nav li {
   }
 
   figure:nth-child(1) {
-  grid-area: col1;
+    grid-area: col1;
   }
 
   figure:nth-child(2) {
-  grid-area: col2;
+    grid-area: col2;
   }
 
   figure:nth-child(3) {
-  grid-area: col3;
+    grid-area: col3;
   }
 
-figure a {
-  justify-content: flex-end;
-  margin-top: auto;
-}
+  figure a {
+    justify-content: flex-end;
+    margin-top: auto;
+  }
 
-figure img {
-  padding-top: 0;
-}
+  figure img {
+    padding-top: 0;
+  }
 
-section p {
-  padding: 0;
-}
+  section p {
+    padding: 0;
+  }
 
-figure {
-  display: flex;
-  flex-direction: column;
-}
+  figure {
+    display: flex;
+    flex-direction: column;
+  }
 
-figcaption {
-display: flex;
-flex-direction: column;
-flex-grow: 1;
-}
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 }
