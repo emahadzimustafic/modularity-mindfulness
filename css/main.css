@@ -32,7 +32,7 @@ body {
 
 .pano {
   grid-area: banner;
-  margin: 1rem 0 .5rem;
+  margin: .5rem 0 .5rem;
 }
 
 h1 {
