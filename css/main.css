@@ -175,7 +175,7 @@ footer {
   grid-area: footer;
   border-top: 3.2px solid #e2e2e2;
   text-align: center;
-  padding-top: 1.5em;
+  padding-top: 1em;
   font-size: .8rem;
 }
 
@@ -260,11 +260,6 @@ footer {
     margin-top: auto;
   }
 
-  figcaption p {
-    margin-bottom: 1.5rem;
-    margin-top: .5rem;
-  }
-
   figure img {
     padding-top: 0;
   }
@@ -293,5 +288,4 @@ footer {
     grid-area: banner;
     margin-top: -.5rem;
   }
-
 }
