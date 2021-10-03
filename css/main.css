@@ -288,6 +288,7 @@ footer {
 }
 
 @media only screen and (min-width: 62.5em) {
+
   h2 img {
     grid-area: banner;
     margin-top: -.5rem;
