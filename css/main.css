@@ -124,6 +124,7 @@ figure h4 {
   display: flex;
   flex-direction: column;
   font-size: 1.125rem;
+  padding-top: 0;
 }
 
 figure img {
@@ -157,6 +158,10 @@ figure a {
   flex-direction: column;
 }
 
+figure:nth-child(3) {
+  margin-bottom: 0;
+}
+
 footer {
   grid-area: footer;
   border-top: 3.2px solid #e2e2e2;
@@ -167,7 +172,7 @@ footer {
 
 @media only screen and (min-width:38em) {
 
-    header {
+  header {
     display: contents;
   }
 
@@ -229,5 +234,13 @@ footer {
 
 figure a {
   justify-content: flex-end;
+}
+
+figure img {
+  padding-top: 0;
+}
+
+section p {
+  padding: 0;
 }
 }
