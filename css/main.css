@@ -196,7 +196,7 @@ footer {
     gap: 1rem;
   }
 
-  .pano {
+  h2 {
     grid-area: banner;
     margin: .5rem 0;
   }
@@ -279,4 +279,5 @@ footer {
     flex-direction: column;
     flex-grow: 1;
   }
+
 }
