@@ -143,7 +143,7 @@ figcaption h4 span {
 figure {
   grid-area: col1;
   padding: 0;
-  margin: 1.5rem 0 1rem;
+  margin: 1.5rem 0 .5rem;
 }
 
 figure a {
@@ -200,9 +200,11 @@ footer {
 
   nav {
     grid-area: banner;
-    grid-column: 3;
-    grid-row: 1;
     padding-top: 1.5rem;
+    align-items: center;
+    text-align: right;
+    margin-left: auto;
+    justify-content: space-between;
   }
 
   img {
