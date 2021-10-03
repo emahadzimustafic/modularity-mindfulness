@@ -31,7 +31,7 @@ body {
 
 .pano {
   grid-area: banner;
-  margin: 1rem 0 ;
+  margin: 1rem 0 .5rem 0 ;
 }
 
 h1 {
@@ -109,7 +109,7 @@ section {
 section > h3 {
   font-weight: bolder;
   font-size: 2rem;
-  margin: 1rem 0;
+  margin: 1rem 0 .5em 0;
 }
 
 article {
@@ -131,6 +131,10 @@ figure img {
 
 figcaption h4 i {
   font-size: 1.5rem;
+}
+
+figcaption h4 span {
+  font-size: 1.125rem;
 }
 
 figure {
@@ -155,5 +159,5 @@ footer {
   border-top: 3.2px solid #e2e2e2;
   text-align: center;
   padding-top: 1em;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
