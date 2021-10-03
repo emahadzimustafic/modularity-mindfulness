@@ -24,6 +24,7 @@ body {
   grid-template-columns: 1fr;
   grid-template-areas:
     "banner"
+    "span"
     "col1"
     "footer";
   gap: 1rem;
@@ -41,7 +42,7 @@ h1 {
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 header i {
@@ -52,7 +53,7 @@ header span {
   font-size: 1.125rem;
 }
 
-img {
+header img {
   display: block;
   width: 100%;
 }
@@ -98,7 +99,6 @@ h3 {
 }
 
 section {
-  display: grid;
   border-top: 3.2px solid #e2e2e2;
   border-bottom: 3.2px solid #e2e2e2;
   grid-area: span;
@@ -128,6 +128,7 @@ figure h4 {
 
 figure img {
   width: 100%;
+  height: auto;
 }
 
 figcaption h4 i {
@@ -139,6 +140,7 @@ figcaption h4 span {
 }
 
 figure {
+  grid-area: col1;
   padding: 0;
   margin: 1.5rem 0 1rem;
 }
@@ -161,4 +163,71 @@ footer {
   text-align: center;
   padding-top: 1em;
   font-size: .8rem;
+}
+
+@media only screen and (min-width:38em) {
+
+    header {
+    display: contents;
+  }
+
+  body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "banner banner banner"
+      "span span span"
+      "col1 col2 col3"
+      "footer footer footer";
+    gap: 1rem;
+  }
+
+  main {
+    display: contents
+  }
+
+  .pano {
+    grid-area: banner;
+  }
+
+  h1 {
+    grid-area: banner;
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+  }
+
+  nav {
+    grid-area: banner;
+    grid-column: 3;
+    grid-row: 1;
+    padding-top: 1.5rem;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    padding-top: 5rem;
+  }
+
+  section {
+    grid-area: span;
+    grid-column: 2;
+  }
+
+  figure:nth-child(1) {
+  grid-area: col1;
+  }
+
+  figure:nth-child(2) {
+  grid-area: col2;
+  }
+
+  figure:nth-child(3) {
+  grid-area: col3;
+  }
+
+figure a {
+  justify-content: flex-end;
+}
 }
