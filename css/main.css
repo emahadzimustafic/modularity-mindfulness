@@ -260,6 +260,10 @@ footer {
     margin-top: auto;
   }
 
+  figcaption p {
+    margin-bottom: 1.5rem;
+  }
+
   figure img {
     padding-top: 0;
   }
@@ -287,4 +291,5 @@ footer {
     grid-area: banner;
     margin-top: -.5rem;
   }
+
 }
